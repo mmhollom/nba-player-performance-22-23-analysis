@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project uses NBA player stats from the 2022-2023 season to understand how points correlate with overall player performance.
+This project uses NBA player stats from the 2022-2023 season to analyze how points correlate with overall player performance metrics.
 
 Using Python, I explored patterns in over 670 observations to identify how points correlate with other player performance metrics.
 
@@ -24,8 +24,8 @@ The dataset includes:
   - MP: Minutes played per game
   - FG / FGA / FG%: Field goal stats
   - 3P / 3PA / 3P%: 3-point stats
-  - 2P / 2PT / 2P%: 2-point stats
-  - FT / FTA / FT% Free throw stats
+  - 2P / 2PA / 2P%: 2-point stats
+  - FT / FTA / FT%: Free throw stats
   - ORB / DRB / TRB: Rebounding stats
   - AST: Assists per game
   - STL: Steals per game
@@ -50,14 +50,14 @@ The dataset includes:
 
 This project explored the following:
   - Distribution of players by age group
-- Relationships between points per game and:
-  - Rebounds
-  - Assists
-  - Minutes
-  - Games played
-- Predictive modeling of player scoring using:
-  - Naive Bayes (classification)
-  - K-Nearest Neighbors (regression)
+  - Relationships between points per game and:
+    - Rebounds
+    - Assists
+    - Minutes
+    - Games played
+  - Predictive modeling of player scoring using:
+    - Naive Bayes (classifying players into scoring categories)
+    - K-Nearest Neighbors (regression)
 
 ------------
 ## Key Visualizations
@@ -65,7 +65,7 @@ This project explored the following:
 This analysis includes:
 - Pie graph showing the distribution of players by age group
 - Bar graphs comparing points with:
-  - Total rebound
+  - Total rebounds
   - Assists
   - Minutes
   - Games played
@@ -78,9 +78,9 @@ This analysis includes:
 
 - The majority of players are in their 20s -> 69%
 - Points per game shows a positive relationship with minutes played and usage related metrics
-- higher scoring players tend to contribute more across multiple statistical categories, though the stength of relationships varies by metric
-- Naive Bayes model achieves a 85% accuracy in classifying scoring levels
-- KNN regression performed best at k=7, producing more stable predictions than k=4
+- higher scoring players tend to contribute more across multiple statistical categories, though the strength of relationships varies by metric
+- Naive Bayes model achieves an 85% accuracy in classifying scoring levels
+- KNN regression performed best at k = 7, producing more stable predictions than k = 4
 
 
 
